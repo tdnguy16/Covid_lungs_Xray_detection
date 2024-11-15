@@ -1,6 +1,6 @@
 # COVID lungs detection using Decision tree and Logistic Regression
 
-## Overview
+## Overview  
   <table>
   <tr>
     <td align="center">
@@ -14,14 +14,14 @@
   </tr>
 </table>  
 
-**Background**
+**Background**  
 Medical image analysis using machine learning has become an integral part of automated disease diagnosis. In this scenario, we are provided with a dataset of chest X-ray images categorized into two classes: COVID-19 and Normal. The goal is to develop models that can accurately classify the X-rays into the correct category.  
 
-**Dataset Structure:**
+**Dataset Structure**  
 • Train set: 1726 images
 • Test set:433 images
 
-**Goal:**
+**Goal**  
 Develop two machine learning models using a Decision Tree and Logistic Regression to classify X-ray images into COVID-19 and Normal categories. Select appropriate hyperparameters for the Decision Tree and ensure proper implementation of the Logistic Regression model.  
 
 ## Data pre-processing 
