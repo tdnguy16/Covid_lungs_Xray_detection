@@ -14,6 +14,16 @@
   </tr>
 </table>  
 
+**Background**
+Medical image analysis using machine learning has become an integral part of automated disease diagnosis. In this scenario, we are provided with a dataset of chest X-ray images categorized into two classes: COVID-19 and Normal. The goal is to develop models that can accurately classify the X-rays into the correct category.  
+
+**Dataset Structure:**
+• Train set: 1726 images
+• Test set:433 images
+
+**Goal:**
+Develop two machine learning models using a Decision Tree and Logistic Regression to classify X-ray images into COVID-19 and Normal categories. Select appropriate hyperparameters for the Decision Tree and ensure proper implementation of the Logistic Regression model.  
+
 ## Data pre-processing 
 Two ImageDataGenerator objects are instantiated to facilitate the preprocessing of image data for a neural network. These generators are part of the Keras library, which provides tools for data augmentation and preprocessing that are essential for image-based machine learning tasks.
 Normalization is applied to both the training and testing image sets by rescaling pixel values with a coefficient of 1/255.  
