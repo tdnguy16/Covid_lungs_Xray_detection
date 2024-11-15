@@ -33,11 +33,11 @@ Principal Component Analysis (PCA) was employed in the gradient descent model to
   <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/0e472a81-6bf4-4a9e-946e-5716b770ed62" width="400"/><br/>
+      <img src="https://github.com/user-attachments/assets/0e472a81-6bf4-4a9e-946e-5716b770ed62" width="500"/><br/>
       <b>ROC curve of Gradient descent model with PCA</b>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/bb2428f8-61c8-431a-a7b6-b37d0dc4097f" width="400"/><br/>
+      <img src="https://github.com/user-attachments/assets/bb2428f8-61c8-431a-a7b6-b37d0dc4097f" width="500"/><br/>
       <b>ROC curve of Adam model with L2 regression</b>
     </td>
   </tr>
@@ -51,7 +51,7 @@ The model employing gradient descent in conjunction with Principal Component Ana
 In contrast to the batch training methodology typically employed in logistic regression, the implementation of Principal Component Analysis (PCA) with the top 30 principal components resulted in a diminished accuracy of the model. This reduction in performance may be attributed to the exclusion of critical components that are integral to the dataset's inherent variance and predictive capacity. Consequently, to mitigate the potential loss of important information, the entire datasets for both training and testing were utilized in the construction and assessment of a decision tree model. The decision tree was configured with a maximum depth of 30, allowing for a more exhaustive representation of the data's feature space.
 
 **Performance**  
-![image](https://github.com/user-attachments/assets/30d6ca43-4074-43c8-991f-4922d6c9b69a)  
+<img src="https://github.com/user-attachments/assets/30d6ca43-4074-43c8-991f-4922d6c9b69a" alt="image" width="500" height="auto">   
 
 TP = 104, FP = 11, TN = 306, FN = 12  
 Accuracy = (TP + TN) / (TP + TN  + FP + FN) = (104 + 306)/(104 + 306 + 11 + 12) = 0.947  
