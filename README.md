@@ -1,7 +1,6 @@
 # COVID lungs detection using Decision tree and Logistic Regression
 
 ## Overview
-
   <table>
   <tr>
     <td align="center">
@@ -34,11 +33,11 @@ Principal Component Analysis (PCA) was employed in the gradient descent model to
   <table>
   <tr>
     <td align="center">
-      <img src="![image](https://github.com/user-attachments/assets/0e472a81-6bf4-4a9e-946e-5716b770ed62)" width="300"/><br/>
+      <img src="https://github.com/user-attachments/assets/0e472a81-6bf4-4a9e-946e-5716b770ed62" width="300"/><br/>
       <b>ROC curve of Gradient descent model with PCA</b>
     </td>
     <td align="center">
-      <img src="![image](https://github.com/user-attachments/assets/bb2428f8-61c8-431a-a7b6-b37d0dc4097f)" width="300"/><br/>
+      <img src="https://github.com/user-attachments/assets/bb2428f8-61c8-431a-a7b6-b37d0dc4097f" width="300"/><br/>
       <b>ROC curve of Adam model with L2 regression</b>
     </td>
   </tr>
