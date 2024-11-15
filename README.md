@@ -30,7 +30,7 @@ The datasets are prepared with a binary class mode, which is indicative of a two
 In the experimental setup, the batch size was uniformly set to 200 for both the training and testing phases. The training process was conducted over 10 epochs at the learning rate of 0.01. Comparative analysis of optimization algorithms indicated that the Adam optimization method outperformed traditional gradient descent when coupled with Principal Component Analysis (PCA). Furthermore, within the scope of the Adam optimizer framework, Ridge regression was employed due to its superior performance in comparison to the Lasso technique, which yielded suboptimal results.  
 Principal Component Analysis (PCA) was employed in the gradient descent model to address the challenges posed by the dataset's high dimensionality, which includes 784 features. This approach was based on the rationale that a subset of these features might be redundant or highly collinear. In a parallel strategy for the Adam-optimized model, L2 regularization was applied with the intent to diminish the feature space's complexity. This regularization technique penalizes the square of the feature coefficients, effectively shrinking them and thus reducing the model's complexity. Both methods aim to enhance model performance by simplifying the feature space and mitigating the risk of overfitting.
 
-**Performance**  
+**Performance**
   <table>
   <tr>
     <td align="center">
