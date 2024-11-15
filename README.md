@@ -17,17 +17,17 @@
 
 ## Data pre-processing 
 Two ImageDataGenerator objects are instantiated to facilitate the preprocessing of image data for a neural network. These generators are part of the Keras library, which provides tools for data augmentation and preprocessing that are essential for image-based machine learning tasks.
-Normalization is applied to both the training and testing image sets by rescaling pixel values with a coefficient of 1/255.
-The images undergo several preprocessing steps, which include:
-•	Resizing to a uniform dimension of 28×28 pixels.
-•	Conversion to grayscale format.
-•	Grouping into batches containing 200 images each.
-The datasets are prepared with a binary class mode, which is indicative of a two-class classification problem.
+Normalization is applied to both the training and testing image sets by rescaling pixel values with a coefficient of 1/255.  
+The images undergo several preprocessing steps, which include:  
+•	Resizing to a uniform dimension of 28×28 pixels.  
+•	Conversion to grayscale format.  
+•	Grouping into batches containing 200 images each.  
+The datasets are prepared with a binary class mode, which is indicative of a two-class classification problem.  
 
 ## Logistic regression
 **Model**
 ![image](https://github.com/user-attachments/assets/18efc46a-ae4f-4453-8c9c-8bf108aff536)
-In the experimental setup, the batch size was uniformly set to 200 for both the training and testing phases. The training process was conducted over 10 epochs at the learning rate of 0.01. Comparative analysis of optimization algorithms indicated that the Adam optimization method outperformed traditional gradient descent when coupled with Principal Component Analysis (PCA). Furthermore, within the scope of the Adam optimizer framework, Ridge regression was employed due to its superior performance in comparison to the Lasso technique, which yielded suboptimal results.
+In the experimental setup, the batch size was uniformly set to 200 for both the training and testing phases. The training process was conducted over 10 epochs at the learning rate of 0.01. Comparative analysis of optimization algorithms indicated that the Adam optimization method outperformed traditional gradient descent when coupled with Principal Component Analysis (PCA). Furthermore, within the scope of the Adam optimizer framework, Ridge regression was employed due to its superior performance in comparison to the Lasso technique, which yielded suboptimal results.  
 Principal Component Analysis (PCA) was employed in the gradient descent model to address the challenges posed by the dataset's high dimensionality, which includes 784 features. This approach was based on the rationale that a subset of these features might be redundant or highly collinear. In a parallel strategy for the Adam-optimized model, L2 regularization was applied with the intent to diminish the feature space's complexity. This regularization technique penalizes the square of the feature coefficients, effectively shrinking them and thus reducing the model's complexity. Both methods aim to enhance model performance by simplifying the feature space and mitigating the risk of overfitting.
 
 **Performance**
@@ -64,8 +64,8 @@ Despite the reduced training duration, the decision tree model exhibited inferio
 
 ## Conclusion
 **Discussion**
-The fundamental distinction in the development processes of logistic regression and decision tree models lies in their training methodologies. Logistic regression typically employs an iterative approach, utilizing epochs and batch iterations to optimize the model's parameters. In contrast, the decision tree model eschews this iterative process, instead ingesting the entire dataset in a single pass for both training and testing. The complexity and capacity of the decision tree are regulated by adjusting its depth, which directly influences how the model learns and generalizes from the data. This difference in approach reflects the distinct underlying mechanisms of these two types of models.
-The decision tree model, while straightforward in its implementation, did not match the performance of the logistic regression model. Enhancing the resolution of the input images might improve the decision tree's efficacy; however, this would necessitate increased computational resources.
+The fundamental distinction in the development processes of logistic regression and decision tree models lies in their training methodologies. Logistic regression typically employs an iterative approach, utilizing epochs and batch iterations to optimize the model's parameters. In contrast, the decision tree model eschews this iterative process, instead ingesting the entire dataset in a single pass for both training and testing. The complexity and capacity of the decision tree are regulated by adjusting its depth, which directly influences how the model learns and generalizes from the data. This difference in approach reflects the distinct underlying mechanisms of these two types of models.  
+The decision tree model, while straightforward in its implementation, did not match the performance of the logistic regression model. Enhancing the resolution of the input images might improve the decision tree's efficacy; however, this would necessitate increased computational resources.  
 Conversely, logistic regression demonstrated robust performance, evidenced by a high Receiver Operating Characteristic (ROC) curve. Both optimization methods, gradient descent, and Adam, yielded effective models, although the gradient descent approach necessitated a preliminary application of Principal Component Analysis (PCA) to manage the high-dimensional feature space efficiently.
 
 **Future work**
