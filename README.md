@@ -72,10 +72,10 @@ Despite the reduced training duration, the decision tree model exhibited inferio
 
 
 ## Conclusion
-**Discussion**
+**Discussion**  
 The fundamental distinction in the development processes of logistic regression and decision tree models lies in their training methodologies. Logistic regression typically employs an iterative approach, utilizing epochs and batch iterations to optimize the model's parameters. In contrast, the decision tree model eschews this iterative process, instead ingesting the entire dataset in a single pass for both training and testing. The complexity and capacity of the decision tree are regulated by adjusting its depth, which directly influences how the model learns and generalizes from the data. This difference in approach reflects the distinct underlying mechanisms of these two types of models.  
 The decision tree model, while straightforward in its implementation, did not match the performance of the logistic regression model. Enhancing the resolution of the input images might improve the decision tree's efficacy; however, this would necessitate increased computational resources.  
 Conversely, logistic regression demonstrated robust performance, evidenced by a high Receiver Operating Characteristic (ROC) curve. Both optimization methods, gradient descent, and Adam, yielded effective models, although the gradient descent approach necessitated a preliminary application of Principal Component Analysis (PCA) to manage the high-dimensional feature space efficiently.
 
-**Future work**
+**Future work**  
 For future endeavors aimed at augmenting model performance, a variety of image preprocessing techniques, including different resolutions and aspect ratios, should be explored. Additionally, fine-tuning other hyperparameters, such as the learning rate and the Adam optimizer's beta1 and beta2 parameters, could provide a deeper insight into the dataset's characteristics and potentially unveil opportunities for further enhancements. An evaluation of the training velocity is also recommended to reduce the duration of model training. This may involve a more granular analysis of feature selection and optimization of the batch size to achieve a more efficient training process.
