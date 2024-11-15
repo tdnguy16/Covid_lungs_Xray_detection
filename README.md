@@ -54,10 +54,10 @@ In contrast to the batch training methodology typically employed in logistic reg
 **Performance**
 ![image](https://github.com/user-attachments/assets/30d6ca43-4074-43c8-991f-4922d6c9b69a)
 
-TP = 104, FP = 11, TN = 306, FN = 12
-Accuracy = (TP + TN) / (TP + TN  + FP + FN) = (104 + 306)/(104 + 306 + 11 + 12) = 0.947
-Precision = TP / (TP + FP) = 104 / (104 + 11) = 0.904
-Recall = TP / (TP + FN) = 104 / (104 + 12) = 0.897
+TP = 104, FP = 11, TN = 306, FN = 12  
+Accuracy = (TP + TN) / (TP + TN  + FP + FN) = (104 + 306)/(104 + 306 + 11 + 12) = 0.947  
+Precision = TP / (TP + FP) = 104 / (104 + 11) = 0.904  
+Recall = TP / (TP + FN) = 104 / (104 + 12) = 0.897  
 
 Despite the reduced training duration, the decision tree model exhibited inferior performance relative to the logistic regression model. Nonetheless, the architecture of the decision tree model was characterized by its simplicity, as it was constructed without the complexity of batch training procedures.
 
